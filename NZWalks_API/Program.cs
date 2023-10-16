@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<NZWalksDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnectionString"))
 );
-
+// ;Trusted_Connection=True;TrustServerCertificate=True
 
 var app = builder.Build();
 
